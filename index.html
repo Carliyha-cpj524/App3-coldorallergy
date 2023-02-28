@@ -41,21 +41,18 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
         function allergyAdd(){
-            allergy_count = allergy_count + 1;*/
-		alert(allergy_count);*/
-        }
+            allergy_count = allergy_count + 1;
+        };
 
         function coldAdd(){
-            cold_count = cold_count + 1;*/
-		alert(cold_count)*/
-        }
+            cold_count = cold_count + 1;
+        };
 	
 	function results(){
-	var allergyPercent = (Allergy_count/4)*100 // This calculates probability
-	
-	var coldPercent = (cold_count/4)*100
-	var resultText = document.getElementById("results");
-	resultText.innerHTML = "probability it is alergies =" +allergyPercent + "<br> Probability it is a cold =" + coldPercent;
+		var resultText = document.getElementById("results");
+		var allergyPercent = (Allergy_count/4)*100; // This calculates probability
+		var coldPercent = (cold_count/4)*100;
+	resultText.innerHTML = "probability it is alergies =" +allergyPercent + "%" + "<br> Probability it is a cold = " + coldPercent + "%";
 	
 	}
   </script>
